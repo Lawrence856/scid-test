@@ -40,15 +40,15 @@ _axios.interceptors.response.use(
 );
 
 Plugin.install = function(Vue) {
-  Vue.axios = _axios;
-  window.axios = _axios;
+  Vue.api = _axios;
+  window.api = _axios;
   Object.defineProperties(Vue.prototype, {
-    axios: {
+    api: {
       get() {
         return _axios;
       }
     },
-    $axios: {
+    $api: {
       get() {
         return _axios;
       }
@@ -58,4 +58,6 @@ Plugin.install = function(Vue) {
 
 Vue.use(Plugin)
 
-export default Plugin;
+const api = _axios
+
+export default api;
