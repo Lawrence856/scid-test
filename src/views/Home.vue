@@ -106,7 +106,7 @@ export default {
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     }
 
-    .loader-container {
+    & > .loader-container {
       position: static;
       min-height: 85vh;
     }
