@@ -89,7 +89,7 @@ export default {
 
         &__avatar {
             position: relative;
-            width: 84px;
+            min-width: 84px;
             height: 84px;
             border-radius: 50%;
 
